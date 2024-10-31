@@ -28,7 +28,7 @@ exports.signup = (req, res) => {
         }
     });
 };
-
+// aqui hacer cambios
 exports.signin = (req, res) => {
     const { email, password } = req.body;
     User.findByEmail(email.trim(), (err, data) => {
