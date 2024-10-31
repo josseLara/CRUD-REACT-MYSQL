@@ -8,6 +8,7 @@ exports.signup = (req, res) => {
 
     const user = new User(nombre.trim(), email.trim(), hashedPassword);
     // comentario dev dev - v 0.1
+    // comentario 2
     User.create(user, (err, data) => {
         if (err) {
             res.status(500).send({
