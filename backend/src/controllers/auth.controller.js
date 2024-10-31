@@ -28,7 +28,8 @@ exports.signup = (req, res) => {
         }
     });
 };
-// aqui hacer cambios
+// aqui hacer cambios 
+// dev commit
 exports.signin = (req, res) => {
     const { email, password } = req.body;
     User.findByEmail(email.trim(), (err, data) => {
