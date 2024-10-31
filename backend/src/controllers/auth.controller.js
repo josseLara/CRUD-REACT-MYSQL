@@ -30,6 +30,7 @@ exports.signup = (req, res) => {
 };
 // aqui hacer cambios 
 // dev commit
+// dev commit 2
 exports.signin = (req, res) => {
     const { email, password } = req.body;
     User.findByEmail(email.trim(), (err, data) => {
