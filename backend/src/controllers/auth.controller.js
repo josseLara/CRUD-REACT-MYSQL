@@ -1,10 +1,9 @@
 const User = require('../models/user.model');
 const { hash: hashPassword, compare: comparePassword } = require('../utils/password');
 const { generate: generateToken } = require('../utils/token');
-// version 3
+
 exports.signup = (req, res) => {
     // version 2
-    // comentario dev dev - v 0.2
     const { nombre, email, password } = req.body;
     const hashedPassword = hashPassword(password.trim());
 
@@ -33,7 +32,7 @@ exports.signup = (req, res) => {
 // dev dev dev
 // aqui hacer cambios 
 // dev commit
-// dev commit 2
+// dev commit 2// aqui hacer cambios
 exports.signin = (req, res) => {
     const { email, password } = req.body;
     User.findByEmail(email.trim(), (err, data) => {
@@ -71,8 +70,4 @@ exports.signin = (req, res) => {
         }
     });
 
-    // comentario version ----> 2
-    // comentario dev ----> 1 
-    // comentario version ----> 3
-    // comengtario dev ----> 2
 }
