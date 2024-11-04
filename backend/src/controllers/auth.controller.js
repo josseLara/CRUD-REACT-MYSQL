@@ -3,7 +3,6 @@ const { hash: hashPassword, compare: comparePassword } = require('../utils/passw
 const { generate: generateToken } = require('../utils/token');
 // version 3
 exports.signup = (req, res) => {
-    // version 2
     const { nombre, email, password } = req.body;
     const hashedPassword = hashPassword(password.trim());
 
@@ -32,10 +31,6 @@ exports.signup = (req, res) => {
 // dev dev dev
 // aqui hacer cambios 
 // dev commit
-// dev dev dev
-// aqui hacer cambios 
-// dev commit
-// dev commit 2// aqui hacer cambios
 // dev commit 2
 exports.signin = (req, res) => {
     const { email, password } = req.body;
