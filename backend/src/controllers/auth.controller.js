@@ -1,7 +1,7 @@
 const User = require('../models/user.model');
 const { hash: hashPassword, compare: comparePassword } = require('../utils/password');
 const { generate: generateToken } = require('../utils/token');
-
+// version 3
 exports.signup = (req, res) => {
     // version 2
     const { nombre, email, password } = req.body;
