@@ -1,7 +1,7 @@
 const db = require('../config/db.config');
 const { createNewUser: createNewUserQuery, findUserByEmail: findUserByEmailQuery } = require('../database/queries');
 const { logger } = require('../utils/logger');
-
+// mi devvv deeeee
 class User {
     constructor(nombre, email, password) {
         this.nombre = nombre;
