@@ -4,6 +4,7 @@ const { generate: generateToken } = require('../utils/token');
 
 exports.signup = (req, res) => {
     // version 2
+    // comentario dev dev - v 0.2
     const { nombre, email, password } = req.body;
     const hashedPassword = hashPassword(password.trim());
 
